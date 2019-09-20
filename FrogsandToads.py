@@ -1,4 +1,4 @@
-#####     Adam Mansuri - 160483248 - Computing Assignment
+#####     Adam Mansuri 
 
 import time
 import math
@@ -43,7 +43,7 @@ def demonstration():
 ### Here i will use a method(function) to declare a method called correctMove and define it so that it has everything to do with when the user enters something correct.
 ### In this function i will have to define that the user can move into an empty tile next to the current tile or can jump across another frog/toad to the next empty tile.
 ### the 'tileList', 'fromTile' and 'toTile' will be passed on so i will put them in as the parameters
-def correctMove(tileList,fromTile,toTile):  
+def correctMove(tileList,fromTile,toTile):
     if tileList[toTile]!=' ':
         return False
     if tileList[fromTile] == 'F':
@@ -77,7 +77,7 @@ def quitGame():
     sys.exit(1)
 
 
-### Now using all the above functions of correctMove and winGame, i will implement them inside the actual game. 
+### Now using all the above functions of correctMove and winGame, i will implement them inside the actual game.
 def startGame(tileList):
     print(tileList)
     print("From which tile: ")
@@ -94,7 +94,7 @@ def startGame(tileList):
         print("new tileList:\t",tileList)
     else:
         print("Invalid jump!")
-        
+
     if winGame==True:
         print("Congratulation, you have won the game!")
 
@@ -115,7 +115,7 @@ while True:
     print("To replay the game press 0")
     print("To see the demonstration press 1")
     print("Press 3 to continue game!")
-    
+
     userSelection= int(input())
 
     if(userSelection)==2:
@@ -129,21 +129,3 @@ while True:
         startGame(tileList)
     else:
         print()
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    
